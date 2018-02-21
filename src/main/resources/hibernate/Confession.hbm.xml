@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <hibernate-mapping>
-    <class name="confessionManager.model.Confession" table="Confessions">
+    <class name="confessionsManager.model.Confession" table="Confession">
         <meta attribute="class-description">
             This class contais confessions from 123contactforms or googleSpreadSheets
         </meta>

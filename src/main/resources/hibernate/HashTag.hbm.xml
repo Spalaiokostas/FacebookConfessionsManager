@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <hibernate-mapping>
-    <class name="anonPostManager.model.HashTag" table="HashTag">
+    <class name="confessionsManager.model.HashTag" table="HashTag">
         <meta attribute="class-description">
             This class contais user created hashtags
         </meta>

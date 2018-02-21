@@ -77,7 +77,7 @@ public class ConfessionDAO {
         List<Confession> confession = null;
         try {
             tx = session.beginTransaction();
-            confession = session.createQuery("from Response").list();
+            confession = session.createQuery("from Confession").list();
             tx.commit();
         } catch (HibernateException e) {
             if (tx != null) {
@@ -102,7 +102,7 @@ public class ConfessionDAO {
         }
         try {
             tx = session.beginTransaction();
-            Query query = session.createQuery("from Response where processed =:processstatus and published =:publishedstatus");
+            Query query = session.createQuery("from Confession where processed =:processstatus and published =:publishedstatus");
             query.setParameter("processstatus", processedStatus);
             query.setParameter("publishedstatus", publishedStatus);
             

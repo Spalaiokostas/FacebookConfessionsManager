@@ -6,7 +6,7 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="anonPostManager.view.RootLayoutController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="confessionsManager.view.RootLayoutController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -15,11 +15,11 @@
                   <MenuItem mnemonicParsing="false" text="Import Anomologita" />
                   <Menu mnemonicParsing="false" text="Export Anomologita">
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#handleExportPostedResponses" text="Export Posted" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleExportRejectResponses" text="Export Rejected" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleExportAllResponses" text="Export Both" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleExportPostedConfessions" text="Export Posted" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportRejectedConfessions" text="Export Rejected" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportAllConfessions" text="Export Both" />
                         <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem mnemonicParsing="false" onAction="#handleExportUnprocessedResponses" text="Export Unprocessed" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportUnprocessedConfessions" text="Export Unprocessed" />
                     </items>
                   </Menu>
                   <SeparatorMenuItem mnemonicParsing="false" />
@@ -29,12 +29,12 @@
           <Menu mnemonicParsing="false" text="Edit">
             <items>
                   <MenuItem mnemonicParsing="false" text="view HashTags" />
-                  <MenuItem mnemonicParsing="false" text="view Anomologita" />
+                  <MenuItem mnemonicParsing="false" text="view Confessions" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Tools">
               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#handleLoadGoogleSpreadSheetsResponses" text="Load Responses From GoogleSpreadSheets" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoadConfessions" text="Load Responses From GoogleSpreadSheets" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Test Connectivity" />
                   <MenuItem mnemonicParsing="false" onAction="#handleConfigProperties" text="Properties" />
@@ -43,7 +43,7 @@
             <Menu mnemonicParsing="false" text="Connectors">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#handleFacebookLogin" text="Connect to Facebook" />
-                  <MenuItem mnemonicParsing="false" onAction="#handleAuthGoogleSpreadSheetsController" text="Connecto to GoogleSpreadSheets" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAuthGoogleSpreadSheets" text="Connecto to GoogleSpreadSheets" />
                </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Help">

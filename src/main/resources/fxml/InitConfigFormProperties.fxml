@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<DialogPane prefHeight="133.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="anonPostManager.view.InitConfigFormPropertiesController">
+<DialogPane prefHeight="133.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="confessionsManager.view.InitConfigFormPropertiesController">
    <content>
       <AnchorPane prefHeight="104.0" prefWidth="461.0">
          <children>
