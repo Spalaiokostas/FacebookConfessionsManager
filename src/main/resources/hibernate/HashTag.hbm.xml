@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+    <class name="anonPostManager.model.HashTag" table="HashTag">
+        <meta attribute="class-description">
+            This class contais user created hashtags
+        </meta>
+        <id name="id" type="int">
+            <generator class="native"/>
+        </id>
+        <property name="hashTagName" column="hashtag_name" type="string"/>
+        <property name="usageCounter"  column="usage_counter" type="integer"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+    <class name="confessionManager.model.Confession" table="Confessions">
+        <meta attribute="class-description">
+            This class contais confessions from 123contactforms or googleSpreadSheets
+        </meta>
+        <id name="id" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="timestamp" column="time_stamp" access="field" type="string"/>
+        <property name="message" column="message" access="field" type="string"/>
+        <property name="faculty" column="faculty" access="field" type="string"/>
+        <property name="published" column="published" type="boolean"/>
+        <property name="processed" column="processed" type="boolean"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="anonPostManager.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Import Anomologita" />
+                  <Menu mnemonicParsing="false" text="Export Anomologita">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleExportPostedResponses" text="Export Posted" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportRejectResponses" text="Export Rejected" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportAllResponses" text="Export Both" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExportUnprocessedResponses" text="Export Unprocessed" />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="view HashTags" />
+                  <MenuItem mnemonicParsing="false" text="view Anomologita" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoadGoogleSpreadSheetsResponses" text="Load Responses From GoogleSpreadSheets" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Test Connectivity" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleConfigProperties" text="Properties" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Connectors">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleFacebookLogin" text="Connect to Facebook" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleAuthGoogleSpreadSheetsController" text="Connecto to GoogleSpreadSheets" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
